@@ -12,8 +12,9 @@ config({
 
 //Middleware
 app.use(express.json()); //its position is important
-app.use(router)
 app.use(cors())
+app.use(router)
+// app.use(cors())
 
 
 connectDb();
